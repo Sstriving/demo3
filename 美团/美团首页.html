@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>西安美团网-西安美食_酒店_旅游</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font: 400 14px/1.5 "Hiragino Sans GB","WenQuanYi Micro Hei",tahoma,sans-serif;
+            color: #666;
+            background-color: #fff;
+            position: static;
+        }
+        .top_1{
+            height: 34px;
+            width: 100%;
+            background-color: #f9f9f9;
+            border-top: 1px solid silver;
+            border-bottom: 1px solid silver;
+        }
+        .top_1_left{
+            list-style: none;
+            margin-left:2%;
+
+        }
+        .top_1_left li{
+            font-size: 12px;
+            float: left;
+            margin-left: 20px;
+            margin-top: -7px;
+        }
+        .top_1_right{
+            list-style: none;
+            margin-left: 41%;
+        }
+        .top_1_right li{
+            font-size: 12px;
+            float: left;
+            margin-left: 20px;
+            margin-top: -7px;
+        }
+        .top_1_right li:hover{
+            color: #30b8a3;
+        }
+        .top_2{
+            height: 90px;
+            width: 88%;
+            /*background-color: red;*/
+            margin: 0 auto;
+        }
+        .top_2 h1{
+            width: 84px;
+            height: 56px;
+        }
+        .top_2 h1 img{
+            width: 84px;
+            height: 56px;
+        }
+        .top_2_left{
+            float: left;
+            width: 123px;
+            margin-left: 96px;
+            margin-top: -70px;
+        }
+        .top_2_mian{
+            position: relative;
+            top: -70px;
+            left: -1px;
+        }
+        .ul_a1{
+            list-style: none;
+            width: auto;
+            height: 36px;
+            margin-left: 300px;
+        }
+        .ul_a1 li{
+            float: left;
+            font-size: 20px;
+            height: 34px;
+        }
+        #a{
+            border: 2px solid #30b8a3;
+            border-right: 1px dashed #a9a9a9;
+            padding:0 8px;
+        }
+        #b{
+            border: 2px solid #30b8a3;
+            border-left:none ;
+
+        }
+        .ul_a1 li:hover .ul_a_a{
+            display: block;
+        }
+        .ul_a_a {
+            list-style: none;
+            display: none;
+            margin-left: -40px ;
+
+        }
+        .ul_a_a li:hover{
+            background-color: #dcdcdc;
+            border: 1px solid white;
+        }
+        .ul_a2{
+            list-style: none;
+            margin-left: 290px;
+        }
+        .ul_a2 li{
+            float: left;
+            margin: 0 8px;
+        }
+        .ul_a2 li:hover{
+            color: #30b8a3;
+        }
+        .top_2_right{
+            margin-left: 990px;
+            margin-top: -130px;
+        }
+        .main_1{
+            height: 500px;
+            width: 88%;
+            background-color: #f9f9f9;
+            border: 1px solid #e8e8e8;
+            border-top: none;
+            margin: 0 auto;
+        }
+        .main_1_left{
+            width: 22%;
+            border: 1px solid #e1e1e1;
+            border-top: none;
+            height: 100%;
+        }
+        #c{
+            width: 100%;
+            height: 40px;
+            background-color: #2da28d;
+        }
+        #c a{
+            font-size: 16px;
+            color: white;
+            display: inline-block;
+            position: relative;
+            top: -16px;
+            left: -790px;
+        }
+        #d{
+            width: 100%;
+            font-size: 16px;
+            list-style: none;
+            position: relative;
+            margin-top: 40px;
+            top: -40px;
+            left: -42px;
+        }
+        #d li{
+            margin:16px 0 16px 20px;
+            color: black;
+        }
+        #d li hr{
+            border: 1px solid #f3f3f3;
+            margin-left: 0;
+            margin-top: 10px;
+            margin-bottom: 0;
+            width: 90%;
+        }
+        .li_1 a{
+            font-size: 12px;
+            color: #b8b8b8;
+            position: relative;
+            left: 100px;
+        }
+        .li_2 a{
+            font-size: 12px;
+            color: #b8b8b8;
+            position: relative;
+            left: 80px;
+        }
+        .li_3 a{
+            font-size: 12px;
+            color: #b8b8b8;
+            position: relative;
+            left: 67px;
+        }
+        .li_4 a{
+            font-size: 12px;
+            color: #b8b8b8;
+            position: relative;
+            left: 42px;
+        }
+        .li_5 a{
+            font-size: 12px;
+            color: #b8b8b8;
+            position: relative;
+            left: 98px;
+        }
+        .main_1_right{
+            width: 78%;
+            height: 100%;
+            border: 1px solid silver;
+            border-top: none;
+            float: right;
+            margin-top: -501px;
+            background-color: white;
+        }
+        .main_1_top{
+            width: 100%;
+            height: 40px;
+            background-color: #31c0a9;
+            margin-top: -14px;
+        }
+        #e{
+            list-style: none;
+            margin-left: -30px;
+        }
+        #e li{
+            float: left;
+            color: white;
+            font-size: 16px;
+            margin: 7px 24px 0 24px;
+        }
+        #f{
+            width: 80%;
+            height: 92%;
+            border: 1px solid #ececec;
+        }
+        #f hr{
+            width: 96%;
+            color: #ffffff;
+        }
+        .f_1{
+            list-style: none;
+            height: 24px;
+            line-height: 24px;
+            margin-left: -20px;
+            font-size: 12px;
+
+        }
+        .f_1 li{
+            float: left;
+            margin: 0 14px;
+        }
+        .f_2{
+            list-style: none;
+            height: 24px;
+            line-height: 24px;
+            margin-left: -20px;
+            font-size: 12px;
+
+        }
+        .f_2 li{
+            float: left;
+            margin: 0 12px;
+        }
+        .f_3{
+            list-style: none;
+            height: 24px;
+            line-height: 24px;
+            margin-left: -20px;
+            font-size: 12px;
+
+        }
+        .f_3 li{
+            float: left;
+            margin: 0 12px;
+        }
+        .img_left{
+            width: 50%;
+            height: 68%;
+            border-right: 1px solid #e6e6e6;
+            margin-top: -10px;
+        }
+        .img_left img{
+            width: 348px;
+            height: 230px;
+            margin: 10px 0 10px 14px;
+        }
+        .img_left span{
+            position: relative;
+            top: -6px;
+            left: 14px;
+        }
+        .img_left a{
+            font-size: 32px;
+            /*height: auto;*/
+            color: orangered;
+            display: inline-block;
+            position: relative;
+            left: 36px;
+            top: -24px;
+        }
+        .img_right {
+            width: 50%;
+            height: 68%;
+            margin-top: -312px;
+            margin-right: 6px;
+            float: right;
+        }
+        .img_right img{
+            width: 348px;
+            height: 230px;
+            margin: 10px 0 10px 14px;
+        }
+        .img_right span{
+            position: relative;
+            top: -6px;
+            left: 14px;
+        }
+        .img_right a{
+            font-size: 32px;
+            /*height: auto;*/
+            color: orangered;
+            display: inline-block;
+            position: relative;
+            left: 36px;
+            top: -24px;
+        }
+        #g{
+            width: 20%;
+            height: 92%;
+            border: 1px solid #ececec;
+            border-left: none;
+            float: right;
+            margin-top: -462px;
+        }
+        .main_2{
+            height: 80px;
+            width: 88%;
+            margin: 0 auto;
+        }
+        .left_2{
+            position: relative;
+            top: 30px;
+        }
+        .right_2 ul{
+            list-style: none;
+            margin-left: 660px;
+            margin-top: -20px;
+        }
+        .right_2 li{
+            float: left;
+            font-size:14px ;
+            margin-left: 8px;
+            color: #b0ada9;
+        }
+        .main_3{
+            height: 1600px;
+            width: 88%;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #e8e8e8;
+
+        }
+        .main_3_1,.main_3_2,.main_3_3,.main_3_4,.main_3_5{
+            height: 19%;
+            width: 100%;
+            border-bottom: 1px solid silver;
+        }
+        .main_3_1 div,.main_3_2 div,.main_3_3 div,.main_3_4 div,.main_3_5 div{
+            width: 24%;
+            height: 100%;
+            border-right: 1px solid silver;
+            float: left;
+            margin-left: 10px;
+        }
+        .main_3_6{
+            background-color: #e1e1e1;
+            width: 100%;
+            height: 50px;
+        }
+        .main_3_6 a{
+            font-size: 16px;
+            display: inline-block;
+            margin: 12px 490px;
+            text-decoration: none;
+            color: #706c69;
+        }
+        .main_3_6 a:hover{
+            color: #31c0a9;
+        }
+        .foot_1{
+            height: 60px;
+            width: 88%;
+            margin: 50px  auto 20px;
+            border: 1px solid silver;
+
+        }
+        .foot_1_up ul{
+            list-style: none;
+
+        }
+        .foot_1_up li{
+            font-size: 12px;
+            background-color: #eeeeee;
+            float: left;
+            border: 1px solid silver;
+            padding: 2px 20px;
+            position: relative;
+            left: -40px;
+            top: -14px;
+            height: 40%;
+        }
+        .foot_1_under{
+            margin-top: 40px;
+            /*border: 1px solid #d9d9d9;*/
+            height:60%;
+        }
+        .foot_1_under ul{
+            list-style: none;
+            margin-left: -40px;
+        }
+        .foot_1_under li{
+            font-size: 14px;
+            float: left;
+            padding: 10px 20px;
+            margin-top: -20px;
+            height: 59%;
+        }
+        .foot_2{
+            height: 254px;
+            width: 88%;
+            margin: 0 auto;
+            /*background-color: #f5f5f5;*/
+            border-top: 3px double #d8d8d8;
+        }
+        .foot_2_left{
+            height: 100%;
+            width: 80%;
+            margin-left: -85px;
+            /*border-right: 1px solid silver;*/
+        }
+        .foot_2_left ul{
+            list-style: none;
+            float: left;
+            margin-left: 56px;
+        }
+        .foot_2_left li{
+
+            font-size: 12px;
+        }
+        .foot_2_right{
+            height: 100%;
+            width: 25%;
+            float: right;
+            position: relative;
+            top: -246px;
+            left: -36px;
+        }
+        .foot_3{
+            height: 260px;
+            border: 1px solid silver;
+            background-color: #f9f9f9;
+        }
+        .foot_3 img{
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 380px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="top_1">
+        <ul class="top_1_left">
+            <li>☆收藏美团</li>
+            <li style="color: red">登录</li>
+            <li>注册</li>
+            <li style="color: silver">|</li>
+        </ul>
+        <ul class="top_1_right">
+            <li>我的订单</li>
+            <li>我的美团</li>
+            <li style="color: silver">|</li>
+            <li>最近浏览</li>
+            <li style="color: silver">|</li>
+            <li>购物车0件</li>
+            <li style="color: silver">|</li>
+            <li>联系客服</li>
+            <li style="color: silver">|</li>
+            <li>我的商家</li>
+            <li style="color: silver">|</li>
+            <li>城市招募</li>
+            <li style="color: silver">|</li>
+            <li>更多</li>
+        </ul>
+    </div>
+    <div class="top_2">
+        <h1>
+            <a href="美团首页.html">
+                <img  src="image/3df525af5a3f7fe04077567d2a6caf794904.png" alt="tupian"/>
+            </a>
+        </h1>
+        <div class="top_2_left">
+            <a style="font-size: 20px; color: black">西安</a>
+            <br />
+            <a style="border: 1px solid silver;color: #b4b4b4; padding: 2px;">切换城市</a>
+        </div>
+        <div class="top_2_mian">
+            <ul class="ul_a1">
+                <li id="a">团购
+                    <ul class="ul_a_a">
+                        <li>商家</li>
+                    </ul>
+                </li >
+                <li id="b">
+                    <input  style="width: 380px;height: 32px;font-size: 16px;
+                     outline: medium;border: none;color: #b6b6b6" type="text" value="请输入商品名称、地址等"/>
+                </li>
+                <li>
+                    <input  style="height: 38px; width: 60px; color: white; background-color:#30b8a3; border: none;outline: medium "
+                            type="button" value="搜索"/>
+                </li>
+            </ul>
+            <ul class="ul_a2">
+                <li>火锅</li>
+                <li>李想大虾</li>
+                <li>粗粮王</li>
+                <li>蛋糕</li>
+                <li>喜多屋</li>
+                <li>克拉拉</li>
+                <li>一尊黄牛</li>
+                <li>小杨烤肉</li>
+            </ul>
+        </div>
+        <div class="top_2_right">
+            <img src="image/QQ截图20170104153615.png" alt="picture"/>
+        </div>
+    </div>
+    <div class="main_1">
+        <div class="main_1_left">
+            <div id="c">
+                <a>全部分类</a>
+            </div>
+            <ul id="d">
+                <li class="li_1">美食
+                    <a>自助餐</a>
+                    <a>代金券</a>
+                    <a>&gt;</a>
+                    <hr/>
+                </li>
+                <li class="li_2">酒店/客栈
+                    <a>经济型酒店</a>
+                    <a>&gt;</a>
+                    <hr/></li>
+                <li>电影/在线选座
+                    <hr/></li>
+                <li>KTV<hr/></li>
+                <li class="li_3">休闲娱乐
+                    <a>足疗按摩</a>
+                    <a>温泉</a>
+                    <a>&gt;</a>
+                    <hr/></li>
+                <li>周边游/旅游<hr/></li>
+                <li class="li_4">生活服务
+                    <a>婚纱摄影</a>
+                    <a>个人写真</a>
+                    <a>&gt;</a>
+                    <hr/></li>
+                <li class="li_5">丽人
+                    <a>美发</a>
+                    <a>美甲美瞳</a>
+                    <a>&gt;</a>
+                    <hr/></li>
+                <li>今日新单</li>
+            </ul>
+        </div>
+        <div class="main_1_right">
+            <div class="main_1_top">
+                <ul id="e">
+                    <li>首页</li>
+                    <li>今日新单</li>
+                    <li>美食</li>
+                    <li>身边外卖</li>
+                    <li>名店抢购</li>
+                </ul>
+            </div>
+            <div id="f">
+                <ul class="f_1">
+                    <li>热门团购</li>
+                    <li style="color: orangered">火锅</li>
+                    <li style="color:orangered;">自助餐</li>
+                    <li>小吃快餐</li>
+                    <li>西餐</li>
+                    <li>甜点饮品</li>
+                    <li>香锅烤鱼</li>
+                    <li>西北菜</li>
+                    <li>烧烤烤肉</li>
+                    <li>川湘菜</li>
+                </ul>
+                <hr/>
+                <ul class="f_2">
+                    <li>全部区域</li>
+                    <li>碑林区</li>
+                    <li>雁塔区</li>
+                    <li>高新区</li>
+                    <li>莲湖区</li>
+                    <li>未央区</li>
+                    <li>新城区</li>
+                    <li>灞桥区</li>
+                    <li>临潼区</li>
+                    <li>长安区</li>
+                    <li>
+                        <select>
+                        <option>更多</option>
+                        </select>
+                    </li>
+                </ul>
+                <hr/>
+                <ul class="f_3">
+                    <li>热门商区</li>
+                    <li>红旗区</li>
+                    <li>赛高街区</li>
+                    <li>民乐园</li>
+                    <li>西稍门</li>
+                    <li>钟楼/鼓楼</li>
+                    <li>明光路</li>
+                    <li>城东客运站</li>
+                    <li>曲江新区</li>
+                    <li>电视塔</li>
+                </ul>
+                <hr/>
+                <div class="img_left">
+                    <img src="image/e32106a7ea90ee6f8d511119a6563b73256524.jpg" alt="picture" />
+                    <span style="color: #3f3f3f; font-size: 16px">水果驾到</span>
+                    <br />
+                    <span style="font-size: 14px; color: #aaabab">10元代金券1张，全场通用，可叠加使用</span>
+                    <a>￥8.9</a>
+                </div>
+                <div class="img_right">
+                    <img src="image/72faf701cde8c734a77c1d7651293fb8131671.jpg"  alt="picture"/>
+                    <span style="color: #3f3f3f; font-size: 16px">重庆刘一手火锅</span>
+                    <br />
+                    <span style="font-size: 14px; color: #aaabab">50元代金券一张，除酒水、饮料外全场</span>
+                    <a>￥38</a>
+                </div>
+            </div>
+            <div id="g">
+                <img  style="margin-left: 6px; margin-top: 10px; width: 170px; " src="image/QQ截图20170104185803.png"
+                         alt="picture"/>
+            </div>
+        </div>
+    </div>
+    <div class="main_2">
+        <div class="left_2">
+            <img src="image/QQ截图20170106115448.png" alt="picture"/>
+        </div>
+        <div class="right_2">
+            <ul>
+                <li>美食</li>
+                <li style="color: silver">|</li>
+                <li>代金券</li>
+                <li style="color: silver">|</li>
+                <li>自助餐</li>
+                <li style="color: silver">|</li>
+                <li>火锅</li>
+                <li style="color: silver">|</li>
+                <li>烧烤烤肉</li>
+                <li style="color: silver">|</li>
+                <li>香锅烤鱼</li>
+                <li style="color: silver">|</li>
+                <li>西餐</li>
+                <li style="color: silver">|</li>
+                <li>全部</li>
+                <li>&lt;</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_3">
+        <div class="main_3_1">
+            <div>
+                <img src="image/QQ截图20170106121426.png" alt="第一列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106122414.png" alt="第二列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106122515.png" alt="第三列"/>
+            </div>
+            <div style="border-right: none">
+                <img src="image/QQ截图20170106122525.png" alt="第四列"/>
+            </div>
+        </div>
+        <div class="main_3_2">
+            <div>
+                <img src="image/QQ截图20170106123159.png" alt="第一列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123221.png" alt="第二列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123230.png" alt="第三列"/>
+            </div>
+            <div style="border-right: none">
+                <img src="image/QQ截图20170106123240.png" alt="第四列"/>
+            </div>
+        </div>
+        <div class="main_3_3">
+            <div>
+                <img src="image/QQ截图20170106123447.png" alt="第一列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123455.png" alt="第二列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123502.png" alt="第三列"/>
+            </div>
+            <div style="border-right: none">
+                <img src="image/QQ截图20170106123514.png" alt="第四列"/>
+            </div>
+        </div>
+        <div class="main_3_4">
+            <div>
+                <img src="image/QQ截图20170106123615.png" alt="第一列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123624.png" alt="第二列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123632.png" alt="第三列"/>
+            </div>
+            <div style="border-right: none">
+                <img src="image/QQ截图20170106123644.png" alt="第四列"/>
+            </div>
+        </div>
+        <div class="main_3_5">
+            <div>
+                <img src="image/QQ截图20170106123729.png" alt="第一列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123743.png" alt="第二列"/>
+            </div>
+            <div>
+                <img src="image/QQ截图20170106123752.png" alt="第三列"/>
+            </div>
+            <div style="border-right: none">
+                <img src="image/QQ截图20170106123800.png" alt="第四列"/>
+            </div>
+        </div>
+        <div class="main_3_6">
+            <a href="美团首页.html" >更多美食内容请点击查看&lt;</a>
+        </div>
+    </div>
+    <div class="foot_1">
+        <div class="foot_1_up">
+            <ul >
+                <li style="background-color: #cecdc4">团购分类</li>
+                <li>热门地标</li>
+                <li>今日新单</li>
+                <li>周边城市</li>
+                <li>品牌推荐</li>
+                <li>专题推荐</li>
+                <li>品类推荐</li>
+                <li>友情链接</li>
+            </ul>
+        </div>
+        <div class="foot_1_under">
+            <ul >
+                <li>美食团购</li>
+                <li>电影团购</li>
+                <li>休闲娱乐团购</li>
+                <li>旅游团购</li>
+                <li>生活服务团购</li>
+                <li>购物团购</li>
+                <li>丽人团购</li>
+                <li>团购评论</li>
+                <li>品牌团购</li>
+                <li>专题团购</li>
+                <li>美团团购</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="foot_2">
+        <div class="foot_2_left">
+            <ul>
+                <li style="font-size: 16px;font-weight: bold; color: #363636;margin-bottom: 18px;">获取更新</li>
+                <li>邮件订阅</li>
+                <li>iphone/Android</li>
+                <li>美团qq空间</li>
+                <li>美团新浪微博</li>
+                <li>sitemap</li>
+                <li>RSS订阅</li>
+            </ul>
+            <ul>
+                <li style="font-size: 16px;font-weight: bold; color: #363636;margin-bottom: 18px;">商务合作</li>
+                <li>商家合作</li>
+                <li>美团商家营销平台</li>
+                <li>到店餐饮代理商招募</li>
+                <li>市场合作</li>
+                <li>美团联盟</li>
+                <li>美团云</li>
+                <li>廉政邮箱</li>
+                <li>聚宝盆餐饮开放品台</li>
+            </ul>
+            <ul>
+                <li style="font-size: 16px;font-weight: bold; color: #363636;margin-bottom: 18px;">公司信息</li>
+                <li>关于美团</li>
+                <li>美团承诺</li>
+                <li>媒体报道</li>
+                <li>加入我们</li>
+                <li>法律声明</li>
+                <li>用户协议</li>
+                <li>美团点评餐饮安全管理办法</li>
+                <li>营业执照</li>
+            </ul>
+            <ul style="border-right: 1px solid #dddddd; padding-right: 120px">
+                <li style="font-size: 16px;font-weight: bold; color: #363636;margin-bottom: 18px;">用户帮助</li>
+                <li>申请退款</li>
+                <li>查看美团券密码</li>
+                <li>常见问题</li>
+                <li>开放API</li>
+                <li>反诈骗公告</li>
+            </ul>
+        </div>
+        <div class="foot_2_right">
+            <img src="image/QQ截图20170106142425.png" alt="picture"/>
+        </div>
+    </div>
+    <div class="foot_3">
+        <img src="image/QQ截图20170106143013.png"  alt="picture"/>
+    </div>
+</body>
+</html>

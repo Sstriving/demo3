@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>360页面</title>
+    <style>
+    .overall{
+        font:12px sans-serif;
+    }
+    .head1{
+        height: 40px ;
+        background-color: ghostwhite;
+        border: 1px solid silver;
+    }
+    #a{
+        float: right;
+        margin-right: 150px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .head2{
+        background-color: white;
+        margin:0  auto;
+        width:1000px;
+    }
+    .head2 span{
+        font-style: italic;
+        font-size: 30px;
+        /*text-align: center;*/
+    }
+    .head3{
+        height: 110px;
+        width: 1000px;
+        background-color: ghostwhite ;
+        border: 1px solid silver;
+        margin:0 auto;
+    }
+    #b{
+        width: 560px;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    #c{
+        width: 700px;
+        margin: 10px auto;
+        font-size: 15px;
+    }
+    #d{
+        width: 560px;
+        margin: 10px auto;
+        font-size: 13px;
+    }
+
+    .body1{
+        height: auto;
+        border: 1px solid silver;
+        width: 1000px;
+        background-color: ghostwhite ;
+        margin: 10px auto 0 auto ;
+    }
+    #e{
+        height: 26px;
+        font-size: 14px;
+        border-bottom: 1px solid green;
+        border-top: 1px solid silver;
+        text-align: center;
+
+    }
+    #e a{
+        margin: 4px 25px;
+        height: 100%;
+        /*border-right: 1px dashed silver;*/
+        display: inline-block;
+    }
+    #g{
+        height: 26px;
+        font-size: 14px;
+        border-bottom: 1px solid green;
+        text-align: center;
+    }
+    #g a{
+        margin: 3px 14px;
+        height: 100%;
+        /*border-right: 1px dashed silver;*/
+        display: inline-block;
+    }
+    #h{
+        width: 100%;
+        height: 1100px;
+        margin: 15px 0 0 0;
+        background-color: white;
+        border: 1px solid silver;
+    }
+    #H1{
+        width: 250px;
+        height:1100px;
+        border-right: 1px solid silver;
+        float: left;
+        font-size: 15px;
+        /*background-color;*/
+    }
+    #H11{
+        /*width: 100%;*/
+        height: 300px;
+        border-bottom: 1px solid silver;
+        /*background-color: red;*/
+    }
+    #H11 a{
+        margin:  25px;
+        text-align: center;
+    }
+    #H12{
+        /*width: 100%;*/
+        height: 150px;
+        /*background-color: black;*/
+        margin-top: 10px;
+        border-top: 1px solid silver;
+        /*border-bottom: 1px solid silver;*/
+    }
+    #H12 span{
+        margin: 10px;
+        color: #f563b7;
+    }
+    #H13{
+        height: 630px ;
+        /*background-color: #4ff54a;*/
+        margin-top: 10px;
+        border-top: 1px solid silver;
+    }
+    #H13 img{
+        margin: 10px;
+        width: 230px;
+    }
+    /*.table1{*/
+        /*width: 250px;*/
+        /*border-top: 1px solid silver;*/
+        /*border-right: 1px solid silver; */
+    /*}*/
+    #H2{
+        width: 740px;
+        height: 1100px;
+        border-left: 1px solid silver;
+        float: right;
+        font-size: 15px;
+        /*background-color: black;*/
+    }
+    #H21{
+        height: 330px;
+        border-bottom: 1px solid silver;
+    }
+    #H22,#H23,#H24{
+
+        margin-top: 10px;
+        border-top: 1px solid silver;
+        border-bottom: 1px solid silver;
+    }
+    #H22{
+        height: 65px;
+    }
+    #H22 a{
+        margin:  30px;
+        /*text-align: center;*/
+    }
+    #H23{
+        height: 240px;
+    }
+    #H24{
+        height: 345px;
+        width: 100%;
+    }
+    #H240{
+        border-bottom: 1px solid silver;
+    }
+    #H240 a{
+        border-right: 1px solid silver ;
+        color: #3012a0;
+        margin: 10px;
+        padding-right: 1px;
+
+    }
+    #H25{
+        margin-top: 20px;
+        border-top: 1px solid silver;
+    }
+    #H250 a{
+        border-right: 1px solid silver ;
+        margin: 20px 8px;
+        padding-right: 1px;
+        font-size: 15px;
+        display: inline-block;
+
+
+    }
+    .afterbody{
+        height: 80px;
+        border: 1px solid silver;
+        background-color: gray;
+        margin-top: 10px;
+
+    }
+    #last1{
+        margin: 0 auto;
+        width: 700px;
+    }
+    #last1 a{
+        border-right: 2px solid silver ;
+        margin: 10px 8px;
+        padding: 1px;
+        font-size: 13px;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.28);
+    }
+    #last2{
+        margin: 0 auto;
+        width: 800px;
+    }
+    #last2 span{
+        color: rgba(255, 255, 255, 0.28);
+        font-size: 13px;
+    }
+    </style>
+</head>
+<body class="overall">
+  <div class="head1">
+      <input style="background-color: white; margin: 8px 100px; border: 1px solid silver"
+             type="button" value="设360导航为主页" name="y"/>
+      <div id="a">
+          <span  style="color: crimson;">捕获萝莉一枚</span>
+          <span>|</span>
+          <span>抢火车票</span>
+          <span>|</span>
+          <span>举报中心</span>
+          <span>|</span>
+          <span>反馈意见</span>
+          <span>|</span>
+          <span>换肤</span>
+      </div>
+  </div>
+  <div class="head2">
+    <span style="color:green">360</span>
+    <span style="color: black">导航</span>
+    <a style="margin: 30px; font-size: 20px; ">北京</a>
+    <img src="image/QQ截图20161227155257.png" title="weather">
+    <span style="margin-left: 50px;font-size: 20px ">12月27日周二</span>
+    <input  style="height: 12px; margin-left: 80px;" type="text" value="邮箱账号" name="x"/>
+  </div>
+  <div class="head3">
+      <div id="b">
+          <a style="background-color: #4ff54a">网页</a>
+          <a>新闻</a>
+          <a>视频</a>
+          <a>图片</a>
+          <a>音乐</a>
+          <a>微博</a>
+          <a>地图</a>
+          <a>问答</a>
+          <a>购物</a>
+          <a>机票</a>
+          <a>汽车</a>
+      </div>
+      <div id="c">
+          360搜索
+          <input  style="width: 500px; height: 30px" type="text" value="|" name="f" >
+          <input  style="height: 30px; width: 80px" type="button" value="搜一下" name="f">
+      </div>
+      <div id="d">
+          <a>龙珠</a>
+          <a>阿里云</a>
+          <a>称重传感器</a>
+          <a>电子表微控制器</a>
+          <a>心灵鸡汤</a>
+          <a>发言稿</a>
+          <a>超新慕课</a>
+          <a>龙卷风</a>
+          <a>虎牙直播</a>
+          <a>美文</a>
+      </div>
+  </div>
+  <div class="body1">
+      <div id="e">
+          <a>推荐网站</a>
+          <a>新闻头条</a>
+          <a>电视剧</a>
+          <a>最新电影</a>
+          <a>小游戏</a>
+          <a>小说大全</a>
+          <a>旅游度假</a>
+          <a>网上购物</a>
+          <a>好药特惠</a>
+      </div>
+      <div id="g">
+          <a>人民网</a>
+          <a>中华网</a>
+          <a>央视网</a>
+          <a>中国网</a>
+          <a>国际在线</a>
+          <a>中国日报网</a>
+          <a>中国经济网</a>
+          <a>光明网</a>
+          <a>央广网</a>
+          <a>求是网</a>
+          <a>中国青年网</a>
+          <a>网信网</a>
+      </div>
+      <div id="h">
+        <div id="H1">
+          <div id="H11">
+            <a>新闻·视频</a>
+            <a>电影·电视剧</a>
+            <br /><br />
+            <a>购物·海淘</a>
+            <a>彩票·理财</a>
+            <br /><br />
+            <a>活期·借条</a>
+            <a>娱乐·商城</a>
+            <br /><br />
+            <a>动漫·直播</a>
+            <a>游戏·小游戏</a>
+            <br /><br />
+            <a>搞笑·解梦</a>
+            <a>教育·度假</a>
+            <br /><br />
+            <a>查询·星座</a>
+            <a>机票·火车票</a>
+            <br /><br />
+            <a>手机·小说</a>
+            <a>好药·旅游</a>
+            <br />
+          </div>
+          <div id="H12">
+              <img  style="width: 250px " src="image/t01aa4dfe6ded632a5a.jpg" alt="picture"/>
+              <span>爱与勇气的冒险即将拉开帷幕</span>
+              <br />
+              <span>这次冒险由我们来守护</span>
+          </div>
+          <div id="H13">
+            <a style="margin: 10px; font-size: 17px; color: #38f541">猜你爱看</a>
+            <a style="margin-left: 100px; font-size: 15px; color: rgba(0, 0, 0, 0.44)">换一下</a>
+            <table  cellspacing="0" width="250px" >
+                <tr >
+                    <th style="border-top: 2px solid #38f541 ">头条</th>
+                    <th style="border: 1px solid rgba(0, 0, 0, 0.44); color: rgba(0, 0, 0, 0.44)">八卦</th>
+                    <th style="border: 1px solid rgba(0, 0, 0, 0.44); color: rgba(0, 0, 0, 0.44)">看天下</th>
+                    <th style="border: 1px solid rgba(0, 0, 0, 0.44); color: rgba(0, 0, 0, 0.44)">社会</th>
+                </tr>
+            </table>
+            <img src="image/t010d8e5b4b7ebc3691.png" alt="picture1"/>
+            <a style="margin: 10px;">·新疆4名暴徒冲入县委大院被击毙</a>
+            <br />
+            <a style="margin: 10px;">·老两口饭后散步“捡”1252万巨款</a>
+            <br />
+            <a style="margin: 10px;">·95后乞讨9年挣186万 农补黑幕</a>
+            <br />
+            <a style="margin: 10px;">·卓伟连爆猛料：著名人妻女星陪睡</a>
+            <br /><br />
+            <table  cellspacing="0" width="250px" >
+                <tr >
+                    <th style="border:1px solid rgba(0, 0, 0, 0.44)">热播</th>
+                    <th style="border: 1px solid rgba(0, 0, 0, 0.44); color: rgba(0, 0, 0, 0.44)">视频</th>
+                    <th style="border-top: 2px solid #38f541; color: rgba(0, 0, 0, 0.44)">电影</th>
+                    <th style="border: 1px solid rgba(0, 0, 0, 0.44); color: rgba(0, 0, 0, 0.44)">花边</th>
+                </tr>
+            </table>
+            <img src="image/t0190ca58faad5ae307.jpg" alt="picture2"/>
+           <a style="margin: 10px;">▶疯狂主播为吸人气地铁爆粗</a>
+            <br />
+            <a style="margin: 10px;">▶瞎！网红整容撞脸西游记妖精</a>
+            <br />
+            <a style="margin: 10px;">▶实拍16岁儿子让父亲跪下认错</a>
+            <br />
+            <a style="margin: 10px;">▶新浪对新娘发誓：天空劈响雷</a>
+            <br /><br />
+            <hr/>
+            <span style="color: black; margin-left: 10px; ">充话费</span>
+            <span>|</span>
+            <span style="color: rgba(0, 0, 0, 0.44)">冲流量</span>
+            <span style="color:rgba(0, 0, 0, 0.44); margin-left: 60px ">机票</span>
+            <span style="color:rgba(0, 0, 0, 0.44);margin-left: 2px">点卡</span>
+            <br /><br />
+            <form action="360页面.html" method="post">
+              <input style="margin-left: 10px;width: 100px; color:rgba(0, 0, 0, 0.44);  " type="text" value="请输入手机号" name="123"/>
+              <select name="menay" >
+                  <option value="">100元</option>
+                  <option value="">50元</option>
+                  <option value="">20元</option>
+              </select>
+              <input type="button" value="充值"/>
+            </form>
+          </div>
+        </div>
+        <div id="H2">
+          <div id="H21">
+             <table width="663px" align="center">
+                 <tr style="height: 30px;">
+                     <td>360搜索·商城</td>
+                     <td>新浪·微博</td>
+                     <td>天猫·精选</td>
+                     <td>搜狐·视频</td>
+                     <td>网易·邮箱</td>
+                     <td>凤凰·军事</td>
+                 </tr>
+                 <tr style="height: 30px;" >
+                     <td >360游戏</td>
+                     <td>淘宝网</td>
+                     <td>网上购物</td>
+                     <td style="color: #f5af3f">苏宁易购</td>
+                     <td>安全卫士</td>
+                     <td>携程旅行</td>
+                 </tr>
+                 <tr style="height: 30px;">
+                     <td style="color: #f5af3f">360游戏</td>
+                     <td>淘宝网</td>
+                     <td>网上购物</td>
+                     <td>苏宁易购</td>
+                     <td>安全卫士</td>
+                     <td>携程旅行</td>
+                 </tr>
+                 <tr style="height: 30px;">
+                     <td style="color: #f5af3f">360游戏</td>
+                     <td>淘宝网</td>
+                     <td>网上购物</td>
+                     <td>苏宁易购</td>
+                     <td>安全卫士</td>
+                     <td>携程旅行</td>
+                 </tr>
+             </table>
+             <hr align="center" width="700" style="border:1px dashed #68ffa1;" />
+              <table width="663px" align="center">
+                  <tr style="height: 30px;">
+                      <td>360搜索·商城</td>
+                      <td>新浪·微博</td>
+                      <td>天猫·精选</td>
+                      <td>搜狐·视频</td>
+                      <td>网易·邮箱</td>
+                      <td>凤凰·军事</td>
+                  </tr>
+              </table>
+              <table width="663px" align="center">
+                  <tr style="height: 30px;">
+                      <td>360搜索·商城</td>
+                      <td>新浪·微博</td>
+                      <td>天猫·精选</td>
+                      <td>搜狐·视频</td>
+                      <td>网易·邮箱</td>
+                      <td>凤凰·军事</td>
+                  </tr>
+                  <tr style="height: 30px;" >
+                      <td style="color: #f5af3f">360游戏</td>
+                      <td>淘宝网</td>
+                      <td>网上购物</td>
+                      <td>苏宁易购</td>
+                      <td>安全卫士</td>
+                      <td>携程旅行</td>
+                  </tr>
+                  <tr style="height: 30px;">
+                      <td style="color: #f5af3f">360游戏</td>
+                      <td>淘宝网</td>
+                      <td>网上购物</td>
+                      <td>苏宁易购</td>
+                      <td>安全卫士</td>
+                      <td>携程旅行</td>
+                  </tr>
+                  <tr style="height: 30px;">
+                      <td style="color: #f5af3f">360游戏</td>
+                      <td>淘宝网</td>
+                      <td>网上购物</td>
+                      <td>苏宁易购</td>
+                      <td>安全卫士</td>
+                      <td>携程旅行</td>
+                  </tr>
+              </table>
+          </div>
+          <div id="H22">
+            <br />
+            <a href="360页面.html">土豆</a>
+            <a href="360页面.html">易购特卖</a>
+            <a href="360页面.html">大众点评</a>
+            <a href="360页面.html">中金在线</a>
+            <a href="360页面.html">豆果美食</a>
+            <a href="360页面.html">暴走漫画</a>
+          </div>
+          <div id="H23">
+            <span style="float:left; color: #38f541; font-size: 18px;">发现你喜欢</span>
+            <br />
+            <hr align="center" width="720" style="border:1px dashed #6dff89;" />
+            <table width="660px" align="center">
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">页游</td>
+                    <td>能赚钱的游戏</td>
+                    <td>范伟打天下</td>
+                    <td>装备RMB回收</td>
+                    <td>一刀999级</td>
+                    <td>2016版传奇</td>
+                    <td>正版网页传奇</td>
+                    <td><a>换一换</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">游戏</td>
+                    <td>能赚钱的游戏</td>
+                    <td>范伟打天下</td>
+                    <td>装备RMB回收</td>
+                    <td>一刀999级</td>
+                    <td>2016版传奇</td>
+                    <td>正版网页传奇</td>
+                    <td><a>换一换</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">热门</td>
+                    <td>能赚钱的游戏</td>
+                    <td>范伟打天下</td>
+                    <td>装备RMB回收</td>
+                    <td>一刀999级</td>
+                    <td>2016版传奇</td>
+                    <td>正版网页传奇</td>
+                    <td><a>换一换</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">旅游</td>
+                    <td>能赚钱的游戏</td>
+                    <td>范伟打天下</td>
+                    <td>装备RMB回收</td>
+                    <td>一刀999级</td>
+                    <td>2016版传奇</td>
+                    <td>正版网页传奇</td>
+                    <td><a>换一换</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">推荐</td>
+                    <td>能赚钱的游戏</td>
+                    <td>范伟打天下</td>
+                    <td>装备RMB回收</td>
+                    <td>一刀999级</td>
+                    <td>2016版传奇</td>
+                    <td>正版网页传奇</td>
+                    <td><a>换一换</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">热搜</td>
+                    <td>能赚钱的游戏</td>
+                    <td>范伟打天下</td>
+                    <td>装备RMB回收</td>
+                    <td>一刀999级</td>
+                    <td>2016版传奇</td>
+                    <td>正版网页传奇</td>
+                    <td><a>换一换</a></td>
+                </tr>
+            </table>
+          </div>
+          <div id="H24">
+            <div id="H240">
+              <a>新闻</a>
+              <a>军事</a>
+              <a>体育</a>
+              <a>NBA</a>
+              <a>财经</a>
+              <a>贷款</a>
+              <a>网游</a>
+              <a>小游戏</a>
+              <a>棋牌</a>
+              <a>背单词</a>
+              <a>考试</a>
+              <a>公务员</a>
+            </div>
+            <table width="700px" >
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">邮箱</td>
+                    <td>163邮箱</td>
+                    <td>126邮箱</td>
+                    <td>阿里云</td>
+                    <td>QQ邮箱</td>
+                    <td>新浪邮箱</td>
+                    <td>Outlook邮箱</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">新闻</td>
+                    <td>头条新闻</td>
+                    <td>搜狐·未来网</td>
+                    <td>凤凰资料</td>
+                    <td>网信网</td>
+                    <td>环球中国网</td>
+                    <td>今日头条</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">军事</td>
+                    <td>中华网军事</td>
+                    <td>铁血军事</td>
+                    <td>米尔军情网</td>
+                    <td>环球新军事</td>
+                    <td>新浪军事</td>
+                    <td>今日军事</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">体育</td>
+                    <td>新浪体育</td>
+                    <td>搜狐体育</td>
+                    <td>网易体育</td>
+                    <td>直播吧</td>
+                    <td>体坛周报</td>
+                    <td>虎扑体育</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">财经</td>
+                    <td>163邮箱</td>
+                    <td>126邮箱</td>
+                    <td>阿里云</td>
+                    <td>QQ邮箱</td>
+                    <td>新浪邮箱</td>
+                    <td>Outlook邮箱</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">网游</td>
+                    <td>163邮箱</td>
+                    <td>126邮箱</td>
+                    <td>阿里云</td>
+                    <td>QQ邮箱</td>
+                    <td>新浪邮箱</td>
+                    <td>Outlook邮箱</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">新闻</td>
+                    <td>头条新闻</td>
+                    <td>搜狐·未来网</td>
+                    <td>凤凰资料</td>
+                    <td>网信网</td>
+                    <td>环球中国网</td>
+                    <td>今日头条</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">军事</td>
+                    <td>中华网军事</td>
+                    <td>铁血军事</td>
+                    <td>米尔军情网</td>
+                    <td>环球新军事</td>
+                    <td>新浪军事</td>
+                    <td>今日军事</td>
+                    <td><a>更多»</a></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td style="color: #190b8b;">体育</td>
+                    <td>新浪体育</td>
+                    <td>搜狐体育</td>
+                    <td>网易体育</td>
+                    <td>直播吧</td>
+                    <td>体坛周报</td>
+                    <td>虎扑体育</td>
+                    <td><a>更多»</a></td>
+                </tr>
+            </table>
+          </div>
+          <div id="H25">
+              <div id="H250">
+                  <a style="color: #140df5  ">教育</a>
+                  <a>2017中级会计预习备考习题</a>
+                  <a style="color: #140df5  ">游戏</a>
+                  <a>满级装备一刀爆轻松反杀</a>
+                  <a style="color: #140df5  ">购物</a>
+                  <a>17年新款女装尖货任你选</a>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="afterbody">
+      <div id="last1">
+        <a>关于我们</a>
+        <a>安全保障</a>
+        <a>360招聘</a>
+        <a>联盟品牌认证</a>
+        <a>猎网平台</a>
+        <span style="font-size: 13px; color:rgba(255, 255, 255, 0.28); ">Copyright &copy;360.cn.All Rights Reserved.</span>
+      </div>
+      <div id="last2">
+        <span>京ICP证080047号 &nbsp;京公网安备1100000200006号 &nbsp; 中国互联网举报中心 &nbsp;
+            电话：010-58541935举报邮箱：360report@360.cn</span>
+      </div>
+  </div>
+</body>
+</html>
